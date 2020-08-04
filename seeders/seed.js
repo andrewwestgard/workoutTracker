@@ -1,6 +1,8 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
+//will pre-populate the data 
+
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false

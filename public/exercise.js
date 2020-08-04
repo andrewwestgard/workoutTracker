@@ -99,13 +99,14 @@ async function handleFormSubmit(event) {
   event.preventDefault();
 
   let workoutData = {};
-
+//cardio model will need these inuts
   if (workoutType === "cardio") {
     workoutData.type = "cardio";
     workoutData.name = cardioNameInput.value.trim();
     workoutData.distance = Number(distanceInput.value.trim());
     workoutData.duration = Number(durationInput.value.trim());
   } else if (workoutType === "resistance") {
+    //resistance needs these models
     workoutData.type = "resistance";
     workoutData.name = nameInput.value.trim();
     workoutData.weight = Number(weightInput.value.trim());
