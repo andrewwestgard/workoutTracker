@@ -1,10 +1,9 @@
 const router = require("express").Router();
 const mongoose = require('mongoose')
 
-const exersciseSchema = mongoose.Schema;
 
-const exercises = mongoose.Schema ({
-    exersciseSchema = new mongoose.Schema ({
+const fitnessTracker = mongoose.Schema ({
+    fitnessTracker = new mongoose.Schema ({
         exercise: {
             type: String,
             trim: false,
