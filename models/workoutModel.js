@@ -2,9 +2,13 @@ const router = require("express").Router();
 const mongoose = require('mongoose')
 
 
-const fitnessTracker = mongoose.Schema ({
-    fitnessTracker = new mongoose.Schema ({
-        exercise: {
+const Workout = mongoose.Schema ({
+
+        day: {
+            type: Date,
+            required: 'Enter a date'
+        },
+        type: {
             type: String,
             trim: false,
             required: 'enter a exercise'
@@ -13,7 +17,7 @@ const fitnessTracker = mongoose.Schema ({
             type: Number,
             required: 'enter a number'
         },
-        cardio_training: {
+        name: {
             type: String,
             required: 'enter the type of cardio'
         },
@@ -36,18 +40,10 @@ const fitnessTracker = mongoose.Schema ({
         reps: {
             type: Number,
             required: 'enter set amount'
-        },
-        resistance_duration: {
-            type: Number,
-            required: 'enter resistance duration'
-        },
-        date: {
-            type: Date,
-            default: Date.now
         }
     })
-})
 
-const Exercise = mongoose.model("Exercise", exerciseSchema);
 
-module.exports = Exercise;
+// const Workout = mongoose.model("Workout", Workout);
+
+module.exports = Workout;
