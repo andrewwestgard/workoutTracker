@@ -1,0 +1,1 @@
+module.exports = {workoutSchema: require('./workoutModel')};
