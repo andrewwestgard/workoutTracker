@@ -21,7 +21,6 @@ const MONGODB_URI = process.env.MONGOATLAS_URI
   useFindAndModify: false
 });
 
-// mongodb+srv://andrewWestgard:<password>@cluster0.m1fb1.mongodb.net/<dbname>?retryWrites=true&w=majority
 // routes
 app.use(require("./routes/apiRoutes"));
 app.use(require("./routes/htmlRoutes"));
